@@ -1,9 +1,15 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: About Me
+  key: About
   order: 3
 ---
-# About Me
+<article>
+<section>
+<h1>about</h1>
+<p>i make things and play sudoku.</p>
+</section>
+</article>
 
-I am a person that writes stuff.
+
+

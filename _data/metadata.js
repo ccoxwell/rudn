@@ -1,5 +1,6 @@
 module.exports = {
 	title: "rainbow unicorn dot net",
+	displayName: "🌈 🦄 🟣 👩🏻‍💻",
 	url: "https://example.com/",
 	language: "en",
 	description: "i play sudoku and bake bread.",

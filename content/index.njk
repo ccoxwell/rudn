@@ -5,6 +5,24 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 3
 ---
+
+<header>
+    <video autoplay loop muted playsinline>
+    <source src="/img/carrieanimation.webm" type="video/webm">
+      <source src="/img/output_again.mp4" type="video/mp4">
+  </video>
+
+</header>
+
+<section>
+  
+<h1>who am i?</h1>
+
+<p>i make things and play sudoku.</p>
+
+</section>
+
+<section>
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 
@@ -16,9 +34,9 @@ numberOfLatestPostsToShow: 3
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found on <a href="/blog/">the blog</a>.</p>
 {% endif %}
-
+</section>
 {# List every content page in the project #}
 {#
 <ul>

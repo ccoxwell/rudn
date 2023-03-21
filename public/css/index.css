@@ -191,7 +191,6 @@ article {
 	align-items: center;
 	flex-direction: column;
 	margin-top: 1em;
-	max-width: 100%;
 	border-radius: 0.5em;
 }
 
@@ -213,7 +212,14 @@ article>section {
 }
 
 picture img {
-	width: 598px;
+	width: calc(100vh - 3em);
+}
+
+header > nav > ul, ul.post-metadata {
+	display: flex;
+	list-style: none;
+	gap: 1em;
+	align-items: center;
 }
 
 /* desktop */
@@ -231,8 +237,11 @@ picture img {
 	}
 
 	main {
-		max-width: 20em;
-		min-width: 550px;
+		width: 700px;
+	}
+
+	article {
+		width: 100%;
 	}
 
 	.mobile {
