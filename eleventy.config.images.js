@@ -160,8 +160,10 @@ module.exports = eleventyConfig => {
 		  class="${orientationClass}"
 			src="${lowSrc.url}"
 			alt="${alt}"
+			arbitrary="value"
 			loading="lazy"
-			decoding="async">
+			decoding="async"
+			width="600px">
 		</picture>`;
 	});
 };

@@ -213,7 +213,7 @@ article>section {
 }
 
 picture img {
-	width: calc(100vh - 3em);
+	width: calc(100vw - 3em);
 }
 
 header > nav > ul, ul.post-metadata {
