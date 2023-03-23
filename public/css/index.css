@@ -148,7 +148,7 @@ header.page-header a {
 			var(--theme-orange) 70% 85%,
 			var(--theme-pink) 85%);
 	background-clip: text;
-	color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
 }
 
