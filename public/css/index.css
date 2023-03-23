@@ -44,17 +44,6 @@
 	box-sizing: border-box;
 }
 
-/* html,
-body {
-	padding: 0;
-	margin: 0 auto;
-	font-family: var(--font-family);
-	color: var(--text-color);
-	background-color: var(--background-color);
-} */
-
-
-
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
@@ -91,23 +80,6 @@ h6 {
 	font-family: var(--heading-text);
 }
 
-/* h1 {
-	background: linear-gradient(
-	  135deg,
-	  var(--theme-violet) 14%,
-	  var(--theme-purple) 14% 28%,
-	  var(--theme-blue) 28% 42%,
-	  var(--theme-green) 42% 56%,
-	  var(--theme-yellow) 56% 70%,
-	  var(--theme-orange) 70% 85%,
-	  var(--theme-pink) 85%
-	);
-	background-clip: text;
-	color: transparent;
-	-webkit-text-stroke: 1px #444444;
-	
-  } */
-
 pre,
 code,
 kbd,
@@ -130,8 +102,7 @@ header.page-header {
 	position: sticky;
 	top: 0;
 	text-align: right;
-	gap: 2em;
-	padding: 1em;
+	column-gap: 2em;
 }
 
 header.page-header a {
@@ -169,7 +140,6 @@ main {
 	min-height: calc(100vh - 9em);
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
 	flex-wrap: wrap;
 	margin: 1em auto;
 }
@@ -215,11 +185,22 @@ article>section {
 	display: none;
 }
 
-picture img {
-	width: 100%;
+article picture {
+	display: block;
 }
 
-header > nav > ul, ul.post-metadata {
+p.picture-container {
+	text-align: center;
+}
+
+picture img {
+	max-width: 750px;
+	width: 100%;
+	height: auto;
+}
+
+header>nav>ul,
+ul.post-metadata {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
@@ -262,7 +243,12 @@ span.keep-together {
 	}
 
 	main {
-		width: 700px;
+		width: 800px;
+		max-width: 90%;
+	}
+
+	article>section {
+		padding: 1.5em 3em;
 	}
 
 	article {
@@ -282,7 +268,4 @@ span.keep-together {
 	footer.page-footer {
 		justify-content: space-between;
 	}
-	/* picture img {
-		width: 600px;
-	} */
 }

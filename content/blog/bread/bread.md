@@ -4,8 +4,9 @@ description: here's some bread.
 date: 2023-03-21
 tags: bread
 ---
-
+<p class="picture-container">
 {% image "./IMG_1571.jpeg", "some bread"%}
+</p>
 
 occasionally, i make bread. my latest project has been [brioche](https://en.wikipedia.org/wiki/Brioche). i've tried making it a few times with little success. the broad strokes of making brioche are 
 

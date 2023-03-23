@@ -1,8 +1,6 @@
 const path = require("path");
 const eleventyImage = require("@11ty/eleventy-img");
 
-// TODO hero image partial
-
 /*
 ===== metadata =====
 {
@@ -102,7 +100,6 @@ function generateHTML(_metadata, _imageAttributes) {
 	const defaultFormat = formats[formats.length - 1]
 	let lowSrc = metadata[defaultFormat][0]
 	let highSrc = metadata[defaultFormat][metadata[defaultFormat].length - 1]
-  // let multiplierMap = 
 	// programmatically set a "portrait" or "landscape" class
 	// use class to set appropriate height
 	let orientationClass = highSrc.width / highSrc.height > 1 ? "landscape" : "portrait"
@@ -166,8 +163,7 @@ module.exports = eleventyConfig => {
 			arbitrary="value"
 			loading="lazy"
 			decoding="async"
-			width="600"
-      height="450">
+			width="600">
 		</picture>`;
 	});
 };
