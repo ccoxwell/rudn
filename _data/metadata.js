@@ -1,12 +1,14 @@
 module.exports = {
-	title: "rainbow unicorn dot net",
-	displayName: "🌈 🦄 🟣 👩🏻‍💻",
-	url: "https://example.com/",
+	title: "rainbow unicorn dot dev",
+	mobileDisplayName: `🌈${String.fromCharCode(160)}🦄 🟣${String.fromCharCode(160)}👩🏻‍💻`,
+	desktopDisplayName: 'rainbow unicorn dot dev',
+	url: "https://rainbowunicorn.dev/",
 	language: "en",
-	description: "i play sudoku and bake bread.",
+	description: "i play sudoku, write code, and watch bob's burgers.",
 	author: {
 		name: "carrie coxwell",
 		email: "carrie.coxwell@gmail.com",
-		url: "https://example.com/about-me/",
+		url: "https://rainbowunicorn.dev/about/",
 	},
+	image: "/public/img/carrie_gif_crop_3.webp"
 };

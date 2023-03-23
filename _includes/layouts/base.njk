@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title or metadata.title }}</title>
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" href="/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<meta name="description" content="{{ description or metadata.description }}">
 
 	{#- Atom and JSON feeds included by default #}
@@ -35,6 +38,7 @@
 	{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
 	{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
+	{% seo "" %}
 	<style>
 		{% getBundle "css" %}
 	</style>
@@ -44,8 +48,10 @@
 	<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 	<header class="page-header shadow-medium">
-		<h2><a href="/" class="home-link">{{ metadata.displayName }}</a></h1>
-
+		<section>
+		<a href="/" class="home-link mobile">{{ metadata.mobileDisplayName }}</a>
+		<h3 class="desktop"><a href="/" class="home-link">{{ metadata.desktopDisplayName }}</a></h3>
+</section>
 		{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 		<nav>
 			<h2 class="visually-hidden">Top level navigation menu</h2>

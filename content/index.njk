@@ -6,22 +6,23 @@ eleventyNavigation:
 numberOfLatestPostsToShow: 3
 ---
 
-<header>
+<section class="hero">
     <video autoplay loop muted playsinline>
     <source src="/img/carrieanimation.webm" type="video/webm">
       <source src="/img/output_again.mp4" type="video/mp4">
   </video>
 
-</header>
+</section>
 
 <section>
+  <h1 class="title rainbow">you've reached <span class="keep-together">rainbow unicorn dot dev</span>.</h1>
   
 <h1>who am i?</h1>
 
 <p>i make things and play sudoku.</p>
 
 </section>
-
+{#
 <section>
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
